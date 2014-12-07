@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:PagerSlidingTabStrip="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@drawable/count_head_bg" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="title"
+            android:textColor="@color/white"
+             />
+
+
+    </RelativeLayout>
+
+    <com.example.pagerslidingtabstrip.PagerSlidingTabStrip
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_second_height"
+        android:background="@color/pts_tab_bg"
+        PagerSlidingTabStrip:pstsDividerPadding="10dip"
+        PagerSlidingTabStrip:pstsIndicatorHeight="2dip"
+        PagerSlidingTabStrip:pstsMaxLineWidth="60dip"
+        PagerSlidingTabStrip:pstsUnderlineHeight="1dip"
+        PagerSlidingTabStrip:underlineMarginTop="5dip"
+        PagerSlidingTabStrip:pstsDividerColor="#d6d6d6"
+        PagerSlidingTabStrip:pstsIndicatorColor="@color/green_txt"
+        PagerSlidingTabStrip:selectedTabTextColor="@color/green_txt"
+        PagerSlidingTabStrip:tabTextSize="@dimen/medium_text_size"
+        PagerSlidingTabStrip:pstsUnderlineColor="@color/green_txt" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <!-- 全局灰色 -->
+    <color name="all_gray">#f9f9f9</color>
+    <color name="trail_color">#03ccaa</color>
+    <color name="background_tab_pressed">#6633B5E5</color>
+    <color name="popup_main_background">#b0000000</color>
+    <color name="choose_eara_item_press_color">#f4f4f4</color>
+    <color name="no_color">#00000000</color>
+   <!--  PagerSlidingTabStrip tab color-->
+    <color name="pts_tab_bg">#f4f3f3</color>
+    <color name="white">#ffffff</color>
+    <color name="green_txt">#47cfb9</color>
+</resources>
