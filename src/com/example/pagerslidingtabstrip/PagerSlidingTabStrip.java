@@ -346,12 +346,14 @@ public class PagerSlidingTabStrip extends HorizontalScrollView {
 			lineRight = (currentPositionOffset * nextTabRight + (1f - currentPositionOffset) * lineRight);
 		}
 
-		if(maxLineWidth!=0 && lineRight-lineLeft>maxLineWidth){
-			canvas.drawRect(lineLeft+(lineRight-lineLeft-maxLineWidth)/2, height - indicatorHeight-underlineMarginTop,lineRight-(lineRight-lineLeft-maxLineWidth)/2, height-underlineMarginTop, rectPaint);
+	 if(maxLineWidth!=0 && lineRight-lineLeft>maxLineWidth){
 
-		}else{
-			canvas.drawRect(lineLeft, height - indicatorHeight-underlineMarginTop, lineRight-underlineMarginTop, height, rectPaint);
-		}
+           canvas.drawRect(lineLeft+(lineRight-lineLeft-maxLineWidth)/2, height - indicatorHeight,lineRight-(lineRight-lineLeft-maxLineWidth)/2, height-underlineMarginTop, rectPaint);
+
+        }else{
+           
+           canvas.drawRect(lineLeft, height - indicatorHeight, lineRight-underlineMarginTop, height, rectPaint);
+        }
 
 		// draw divider
 
